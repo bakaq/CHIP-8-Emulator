@@ -68,6 +68,7 @@ class Chip8:
 			game = game_file.read()
 			for i in range(len(game)):
 				self.memory[0x200 + i] = game[i]
+		return game
 
 
 
